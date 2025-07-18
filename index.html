@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aha - Find Your Perfect Stay | Hotel Room Booking</title>
+    <meta name="description" content="Discover and book amazing hotel rooms across India with Aha. Find the perfect accommodation for your next trip with great prices and instant booking.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aha</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Stays</a>
+                <a href="#" class="nav-link">Experiences</a>
+                <a href="#" class="nav-link">Online Experiences</a>
+            </div>
+            <div class="nav-user">
+                <a href="#" class="nav-link">Become a host</a>
+                <div class="user-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Stay</h1>
+            <p>Discover amazing hotel rooms and accommodations across India with unbeatable prices</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-field">
+                        <label>Where</label>
+                        <input type="text" placeholder="Search destinations">
+                    </div>
+                    <div class="search-field">
+                        <label>Check in</label>
+                        <input type="date" id="checkin">
+                    </div>
+                    <div class="search-field">
+                        <label>Check out</label>
+                        <input type="date" id="checkout">
+                    </div>
+                    <div class="search-field">
+                        <label>Guests</label>
+                        <select>
+                            <option>1 guest</option>
+                            <option>2 guests</option>
+                            <option>3 guests</option>
+                            <option>4+ guests</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-properties">
+        <div class="container">
+            <h2>Featured Stays</h2>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Hotel Mumbai">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Mumbai, Maharashtra</div>
+                        <div class="property-title">Luxury Hotel with Sea View</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (124 reviews)</span>
+                        </div>
+                        <div class="property-price">₹3,500 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Heritage Hotel Jaipur">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Jaipur, Rajasthan</div>
+                        <div class="property-title">Heritage Palace Hotel</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (89 reviews)</span>
+                        </div>
+                        <div class="property-price">₹4,200 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Beach Resort Goa">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Goa, India</div>
+                        <div class="property-title">Beachfront Resort & Spa</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (156 reviews)</span>
+                        </div>
+                        <div class="property-price">₹2,800 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mountain Resort Manali">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Manali, Himachal Pradesh</div>
+                        <div class="property-title">Mountain View Resort</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6 (92 reviews)</span>
+                        </div>
+                        <div class="property-price">₹2,200 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business Hotel Delhi">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">New Delhi, Delhi</div>
+                        <div class="property-title">Premium Business Hotel</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5 (203 reviews)</span>
+                        </div>
+                        <div class="property-price">₹3,800 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Backwater Resort Kerala">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Alleppey, Kerala</div>
+                        <div class="property-title">Backwater Houseboat Resort</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (67 reviews)</span>
+                        </div>
+                        <div class="property-price">₹1,800 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 7 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tech City Hotel Bangalore">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Bangalore, Karnataka</div>
+                        <div class="property-title">Modern Tech City Hotel</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.4 (178 reviews)</span>
+                        </div>
+                        <div class="property-price">₹2,900 <span>night</span></div>
+                    </div>
+                </div>
+
+                <!-- Property 8 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Lake View Hotel Udaipur">
+                        <div class="property-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location">Udaipur, Rajasthan</div>
+                        <div class="property-title">Lake Palace Hotel</div>
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (145 reviews)</span>
+                        </div>
+                        <div class="property-price">₹5,200 <span>night</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Aha?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>All our properties are verified and follow strict safety protocols for your peace of mind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Get the best deals and prices across India with our price match guarantee.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Instant Booking</h3>
+                    <p>Book instantly without waiting for confirmation. Your room is secured immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support team is available round the clock to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I cancel my booking?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel your booking through your account dashboard or by contacting our support team. Cancellation policies vary by property.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my payment information secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use industry-standard encryption and secure payment gateways to protect your financial information.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I modify my booking dates?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can modify your booking dates subject to availability and the property's modification policy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer group bookings?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer special rates for group bookings. Contact our support team for customized packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aha</h3>
+                    <p>Your perfect stay awaits. Discover amazing accommodations across India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Information</a></li>
+                        <li><a href="#">Cancellation Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Aha.org</a></li>
+                        <li><a href="#">Diversity & Belonging</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Aha Associates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Host</h4>
+                    <ul>
+                        <li><a href="#">Host your home</a></li>
+                        <li><a href="#">Host an experience</a></li>
+                        <li><a href="#">Responsible hosting</a></li>
+                        <li><a href="#">Resource Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">New features</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2025 Aha, Inc. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Company details</a>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="language-currency">
+                        <button class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English (IN)
+                        </button>
+                        <button class="currency-btn">
+                            <i class="fas fa-rupee-sign"></i>
+                            INR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
